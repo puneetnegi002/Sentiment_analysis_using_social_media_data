@@ -1,0 +1,823 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20181.18.0416.1335                               -->
+<workbook original-version='18.1' source-build='2018.1.0 (20181.18.0416.1335)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='tweetsbi (sentiment.tweetsbi) (sentiment)' inline='true' name='federated.1d4pn8x09vxpch18p60ah121lkuq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='192.168.1.102' name='hadoophive.0terroz1fty87h1c6psjm1k23yn5'>
+            <connection authentication='yes' authentication-type='2' class='hadoophive' connection-type='2' dbname='' odbc-connect-string-extras='' one-time-sql='' port='10000' schema='sentiment' server='192.168.1.102' sslcert='' sslmode='' transport-type='1' username='cloudera'>
+              <connection-customization class='hadoophive' enabled='false' version='18.1'>
+                <vendor name='hadoophive' />
+                <driver name='hadoophive' />
+                <customizations>
+                  <customization name='CAP_AUTH_DB_IMPERSONATE' value='yes' />
+                  <customization name='CAP_AUTH_KERBEROS_IMPERSONATE' value='yes' />
+                  <customization name='CAP_CONNECT_STORED_PROCEDURE' value='no' />
+                  <customization name='CAP_CREATE_TEMP_TABLES' value='no' />
+                  <customization name='CAP_DATASERVER_MAGIC_NUMBER' value='no' />
+                  <customization name='CAP_DEFERS_CONNECTION_VERIFICATION' value='no' />
+                  <customization name='CAP_DISABLE_EXTRACT_TABLE_INDEXING' value='no' />
+                  <customization name='CAP_EQUIJOINS_ONLY' value='no' />
+                  <customization name='CAP_FAST_METADATA' value='no' />
+                  <customization name='CAP_GREENPLUM_TRUST_METADATA_CONTAINSNULL' value='no' />
+                  <customization name='CAP_HIVE_FIX_METADATA_NAMES' value='no' />
+                  <customization name='CAP_INDEX_TEMP_TABLES' value='no' />
+                  <customization name='CAP_INSERT_TEMP_EXEC_STORED_PROCEDURE' value='no' />
+                  <customization name='CAP_LOCAL_ALIASES_CASE_INSENSITIVE' value='no' />
+                  <customization name='CAP_ODBC_ALWAYS_THROW_CONNECT_ERRORS' value='no' />
+                  <customization name='CAP_ODBC_BIND_FORCE_DATETIME_AS_CHAR' value='no' />
+                  <customization name='CAP_ODBC_BIND_FORCE_DATE_AS_CHAR' value='no' />
+                  <customization name='CAP_ODBC_BIND_FORCE_MAX_STRING_BUFFERS' value='no' />
+                  <customization name='CAP_ODBC_BIND_FORCE_MEDIUM_STRING_BUFFERS' value='no' />
+                  <customization name='CAP_ODBC_BIND_FORCE_SIGNED' value='no' />
+                  <customization name='CAP_ODBC_BIND_FORCE_SMALL_STRING_BUFFERS' value='no' />
+                  <customization name='CAP_ODBC_BIND_SUPPRESS_INT64' value='no' />
+                  <customization name='CAP_ODBC_BIND_SUPPRESS_PREFERRED_TYPES' value='no' />
+                  <customization name='CAP_ODBC_BIND_SUPPRESS_WIDE_CHAR' value='no' />
+                  <customization name='CAP_ODBC_CURSOR_DYNAMIC' value='no' />
+                  <customization name='CAP_ODBC_CURSOR_FORWARD_ONLY' value='no' />
+                  <customization name='CAP_ODBC_CURSOR_KEYSET_DRIVEN' value='no' />
+                  <customization name='CAP_ODBC_CURSOR_STATIC' value='no' />
+                  <customization name='CAP_ODBC_DRIVER_HIVE_ASSUME_LATEST' value='no' />
+                  <customization name='CAP_ODBC_ERROR_IGNORE_FALSE_ALARM' value='no' />
+                  <customization name='CAP_ODBC_FETCH_BUFFERS_RESIZABLE' value='no' />
+                  <customization name='CAP_ODBC_FETCH_BUFFERS_SIZE_MASSIVE' value='no' />
+                  <customization name='CAP_ODBC_FETCH_CONTINUE_ON_ERROR' value='no' />
+                  <customization name='CAP_ODBC_FORCE_SINGLE_ROW_BINDING' value='no' />
+                  <customization name='CAP_ODBC_METADATA_STRING_LENGTH_UNKNOWN' value='no' />
+                  <customization name='CAP_ODBC_METADATA_SUPPRESS_SQLCOLUMNS_API' value='no' />
+                  <customization name='CAP_ODBC_METADATA_SUPPRESS_SQLFOREIGNKEYS_API' value='no' />
+                  <customization name='CAP_ODBC_METADATA_SUPPRESS_SQLPRIMARYKEYS_API' value='no' />
+                  <customization name='CAP_ODBC_METADATA_SUPPRESS_SQLSTATISTICS_API' value='no' />
+                  <customization name='CAP_ODBC_REBIND_SKIP_UNBIND' value='no' />
+                  <customization name='CAP_ODBC_TRIM_VARCHAR_PADDING' value='no' />
+                  <customization name='CAP_ODBC_UNBIND_AUTO' value='no' />
+                  <customization name='CAP_ODBC_UNBIND_BATCH' value='no' />
+                  <customization name='CAP_ODBC_UNBIND_EACH' value='no' />
+                  <customization name='CAP_ODBC_USE_NATIVE_PROTOCOL' value='no' />
+                  <customization name='CAP_QUERY_ALLOW_PARTIAL_AGGREGATION' value='yes' />
+                  <customization name='CAP_QUERY_ALWAYS_USE_AQ_CACHE' value='no' />
+                  <customization name='CAP_QUERY_BLENDING_ALWAYS_USE_LOCAL_MAPPING_TABLES' value='no' />
+                  <customization name='CAP_QUERY_BLENDING_PREFER_LOCAL_MAPPING_TABLES' value='yes' />
+                  <customization name='CAP_QUERY_BLENDING_REMOTE_MAPPING_TABLES' value='yes' />
+                  <customization name='CAP_QUERY_BOOLEXPR_TO_INTEXPR' value='no' />
+                  <customization name='CAP_QUERY_BOOL_IDENTIFIER_TO_LOGICAL' value='no' />
+                  <customization name='CAP_QUERY_EMPTY_DOMAIN_TOP' value='no' />
+                  <customization name='CAP_QUERY_FORCE_AGGREGATE_MEASURES' value='no' />
+                  <customization name='CAP_QUERY_GROUP_BY_ALIAS' value='no' />
+                  <customization name='CAP_QUERY_GROUP_BY_DEGREE' value='no' />
+                  <customization name='CAP_QUERY_HAVING_REQUIRES_GROUP_BY' value='no' />
+                  <customization name='CAP_QUERY_HAVING_UNSUPPORTED' value='no' />
+                  <customization name='CAP_QUERY_JOIN_ACROSS_SCHEMAS' value='no' />
+                  <customization name='CAP_QUERY_JOIN_ASSUME_CONSTRAINED' value='no' />
+                  <customization name='CAP_QUERY_JOIN_PUSH_DOWN_CONDITION_EXPRESSIONS' value='no' />
+                  <customization name='CAP_QUERY_JOIN_REQUIRES_SCOPE' value='no' />
+                  <customization name='CAP_QUERY_JOIN_REQUIRES_SUBQUERY' value='no' />
+                  <customization name='CAP_QUERY_NULL_REQUIRES_CAST' value='no' />
+                  <customization name='CAP_QUERY_RECOMPILE_FAILED_QUERY' value='no' />
+                  <customization name='CAP_QUERY_SELECT_ALIASES_SORTED' value='no' />
+                  <customization name='CAP_QUERY_SORT_BY' value='yes' />
+                  <customization name='CAP_QUERY_SORT_BY_DEGREE' value='no' />
+                  <customization name='CAP_QUERY_SUBQUERIES' value='yes' />
+                  <customization name='CAP_QUERY_SUBQUERIES_WITH_TOP' value='yes' />
+                  <customization name='CAP_QUERY_SUBQUERY_QUERY_CONTEXT' value='yes' />
+                  <customization name='CAP_QUERY_SUPPORTS_LODJOINS' value='yes' />
+                  <customization name='CAP_QUERY_SUPPORT_EMPTY_GROUPBY' value='no' />
+                  <customization name='CAP_QUERY_SUPPRESS_CHECK_DOMAIN_LITERALS_THRESHOLD' value='no' />
+                  <customization name='CAP_QUERY_SUPPRESS_NULL_CHECK_QUERIES' value='no' />
+                  <customization name='CAP_QUERY_TIME_REQUIRES_CAST' value='no' />
+                  <customization name='CAP_QUERY_TOPSTYLE_LIMIT' value='no' />
+                  <customization name='CAP_QUERY_TOPSTYLE_ROWNUM' value='no' />
+                  <customization name='CAP_QUERY_TOPSTYLE_TOP' value='no' />
+                  <customization name='CAP_QUERY_TOP_0_METADATA' value='yes' />
+                  <customization name='CAP_QUERY_TOP_N' value='yes' />
+                  <customization name='CAP_QUERY_USE_DOMAIN_RANGES_OPTIMIZATION' value='yes' />
+                  <customization name='CAP_QUERY_USE_QUERY_FUSION' value='yes' />
+                  <customization name='CAP_QUERY_WHERE_FALSE_METADATA' value='no' />
+                  <customization name='CAP_SELECT_INTO' value='no' />
+                  <customization name='CAP_SELECT_TOP_INTO' value='no' />
+                  <customization name='CAP_STORED_PROCEDURE_PREFER_TEMP_TABLE' value='no' />
+                  <customization name='CAP_STORED_PROCEDURE_REPAIR_TEMP_TABLE_STRINGS' value='no' />
+                  <customization name='CAP_STORED_PROCEDURE_TEMP_TABLE_FROM_BUFFER' value='no' />
+                  <customization name='CAP_STORED_PROCEDURE_TEMP_TABLE_FROM_NEW_PROTOCOL' value='no' />
+                  <customization name='CAP_SUPPRESS_CONNECTION_POOLING' value='yes' />
+                  <customization name='CAP_SUPPRESS_DISCOVERY_QUERIES' value='no' />
+                  <customization name='CAP_SUPPRESS_GET_SERVER_TIME' value='yes' />
+                  <customization name='CAP_SUPPRESS_QUICK_FILTER_ACCELERATION_VIEWS' value='no' />
+                </customizations>
+              </connection-customization>
+            </connection>
+          </named-connection>
+          <named-connection caption='192.168.1.102 (2)' name='hadoophive.0zam68e0wrcccg151qh1o16nzozy'>
+            <connection authentication='yes' authentication-type='2' class='hadoophive' connection-type='2' dbname='' odbc-connect-string-extras='' one-time-sql='' port='10000' schema='sentiment' server='192.168.1.102' sslcert='' sslmode='' transport-type='1' username='cloudera'>
+              <connection-customization class='hadoophive' enabled='false' version='18.1'>
+                <vendor name='hadoophive' />
+                <driver name='hadoophive' />
+                <customizations>
+                  <customization name='CAP_AUTH_DB_IMPERSONATE' value='yes' />
+                  <customization name='CAP_AUTH_KERBEROS_IMPERSONATE' value='yes' />
+                  <customization name='CAP_CONNECT_STORED_PROCEDURE' value='no' />
+                  <customization name='CAP_CREATE_TEMP_TABLES' value='no' />
+                  <customization name='CAP_DATASERVER_MAGIC_NUMBER' value='no' />
+                  <customization name='CAP_DEFERS_CONNECTION_VERIFICATION' value='no' />
+                  <customization name='CAP_DISABLE_EXTRACT_TABLE_INDEXING' value='no' />
+                  <customization name='CAP_EQUIJOINS_ONLY' value='no' />
+                  <customization name='CAP_FAST_METADATA' value='no' />
+                  <customization name='CAP_GREENPLUM_TRUST_METADATA_CONTAINSNULL' value='no' />
+                  <customization name='CAP_HIVE_FIX_METADATA_NAMES' value='no' />
+                  <customization name='CAP_INDEX_TEMP_TABLES' value='no' />
+                  <customization name='CAP_INSERT_TEMP_EXEC_STORED_PROCEDURE' value='no' />
+                  <customization name='CAP_LOCAL_ALIASES_CASE_INSENSITIVE' value='no' />
+                  <customization name='CAP_ODBC_ALWAYS_THROW_CONNECT_ERRORS' value='no' />
+                  <customization name='CAP_ODBC_BIND_FORCE_DATETIME_AS_CHAR' value='no' />
+                  <customization name='CAP_ODBC_BIND_FORCE_DATE_AS_CHAR' value='no' />
+                  <customization name='CAP_ODBC_BIND_FORCE_MAX_STRING_BUFFERS' value='no' />
+                  <customization name='CAP_ODBC_BIND_FORCE_MEDIUM_STRING_BUFFERS' value='no' />
+                  <customization name='CAP_ODBC_BIND_FORCE_SIGNED' value='no' />
+                  <customization name='CAP_ODBC_BIND_FORCE_SMALL_STRING_BUFFERS' value='no' />
+                  <customization name='CAP_ODBC_BIND_SUPPRESS_INT64' value='no' />
+                  <customization name='CAP_ODBC_BIND_SUPPRESS_PREFERRED_TYPES' value='no' />
+                  <customization name='CAP_ODBC_BIND_SUPPRESS_WIDE_CHAR' value='no' />
+                  <customization name='CAP_ODBC_CURSOR_DYNAMIC' value='no' />
+                  <customization name='CAP_ODBC_CURSOR_FORWARD_ONLY' value='no' />
+                  <customization name='CAP_ODBC_CURSOR_KEYSET_DRIVEN' value='no' />
+                  <customization name='CAP_ODBC_CURSOR_STATIC' value='no' />
+                  <customization name='CAP_ODBC_DRIVER_HIVE_ASSUME_LATEST' value='no' />
+                  <customization name='CAP_ODBC_ERROR_IGNORE_FALSE_ALARM' value='no' />
+                  <customization name='CAP_ODBC_FETCH_BUFFERS_RESIZABLE' value='no' />
+                  <customization name='CAP_ODBC_FETCH_BUFFERS_SIZE_MASSIVE' value='no' />
+                  <customization name='CAP_ODBC_FETCH_CONTINUE_ON_ERROR' value='no' />
+                  <customization name='CAP_ODBC_FORCE_SINGLE_ROW_BINDING' value='no' />
+                  <customization name='CAP_ODBC_METADATA_STRING_LENGTH_UNKNOWN' value='no' />
+                  <customization name='CAP_ODBC_METADATA_SUPPRESS_SQLCOLUMNS_API' value='no' />
+                  <customization name='CAP_ODBC_METADATA_SUPPRESS_SQLFOREIGNKEYS_API' value='no' />
+                  <customization name='CAP_ODBC_METADATA_SUPPRESS_SQLPRIMARYKEYS_API' value='no' />
+                  <customization name='CAP_ODBC_METADATA_SUPPRESS_SQLSTATISTICS_API' value='no' />
+                  <customization name='CAP_ODBC_REBIND_SKIP_UNBIND' value='no' />
+                  <customization name='CAP_ODBC_TRIM_VARCHAR_PADDING' value='no' />
+                  <customization name='CAP_ODBC_UNBIND_AUTO' value='no' />
+                  <customization name='CAP_ODBC_UNBIND_BATCH' value='no' />
+                  <customization name='CAP_ODBC_UNBIND_EACH' value='no' />
+                  <customization name='CAP_ODBC_USE_NATIVE_PROTOCOL' value='no' />
+                  <customization name='CAP_QUERY_ALLOW_PARTIAL_AGGREGATION' value='yes' />
+                  <customization name='CAP_QUERY_ALWAYS_USE_AQ_CACHE' value='no' />
+                  <customization name='CAP_QUERY_BLENDING_ALWAYS_USE_LOCAL_MAPPING_TABLES' value='no' />
+                  <customization name='CAP_QUERY_BLENDING_PREFER_LOCAL_MAPPING_TABLES' value='yes' />
+                  <customization name='CAP_QUERY_BLENDING_REMOTE_MAPPING_TABLES' value='yes' />
+                  <customization name='CAP_QUERY_BOOLEXPR_TO_INTEXPR' value='no' />
+                  <customization name='CAP_QUERY_BOOL_IDENTIFIER_TO_LOGICAL' value='no' />
+                  <customization name='CAP_QUERY_EMPTY_DOMAIN_TOP' value='no' />
+                  <customization name='CAP_QUERY_FORCE_AGGREGATE_MEASURES' value='no' />
+                  <customization name='CAP_QUERY_GROUP_BY_ALIAS' value='no' />
+                  <customization name='CAP_QUERY_GROUP_BY_DEGREE' value='no' />
+                  <customization name='CAP_QUERY_HAVING_REQUIRES_GROUP_BY' value='no' />
+                  <customization name='CAP_QUERY_HAVING_UNSUPPORTED' value='no' />
+                  <customization name='CAP_QUERY_JOIN_ACROSS_SCHEMAS' value='no' />
+                  <customization name='CAP_QUERY_JOIN_ASSUME_CONSTRAINED' value='no' />
+                  <customization name='CAP_QUERY_JOIN_PUSH_DOWN_CONDITION_EXPRESSIONS' value='no' />
+                  <customization name='CAP_QUERY_JOIN_REQUIRES_SCOPE' value='no' />
+                  <customization name='CAP_QUERY_JOIN_REQUIRES_SUBQUERY' value='no' />
+                  <customization name='CAP_QUERY_NULL_REQUIRES_CAST' value='no' />
+                  <customization name='CAP_QUERY_RECOMPILE_FAILED_QUERY' value='no' />
+                  <customization name='CAP_QUERY_SELECT_ALIASES_SORTED' value='no' />
+                  <customization name='CAP_QUERY_SORT_BY' value='yes' />
+                  <customization name='CAP_QUERY_SORT_BY_DEGREE' value='no' />
+                  <customization name='CAP_QUERY_SUBQUERIES' value='yes' />
+                  <customization name='CAP_QUERY_SUBQUERIES_WITH_TOP' value='yes' />
+                  <customization name='CAP_QUERY_SUBQUERY_QUERY_CONTEXT' value='yes' />
+                  <customization name='CAP_QUERY_SUPPORTS_LODJOINS' value='yes' />
+                  <customization name='CAP_QUERY_SUPPORT_EMPTY_GROUPBY' value='no' />
+                  <customization name='CAP_QUERY_SUPPRESS_CHECK_DOMAIN_LITERALS_THRESHOLD' value='no' />
+                  <customization name='CAP_QUERY_SUPPRESS_NULL_CHECK_QUERIES' value='no' />
+                  <customization name='CAP_QUERY_TIME_REQUIRES_CAST' value='no' />
+                  <customization name='CAP_QUERY_TOPSTYLE_LIMIT' value='no' />
+                  <customization name='CAP_QUERY_TOPSTYLE_ROWNUM' value='no' />
+                  <customization name='CAP_QUERY_TOPSTYLE_TOP' value='no' />
+                  <customization name='CAP_QUERY_TOP_0_METADATA' value='yes' />
+                  <customization name='CAP_QUERY_TOP_N' value='yes' />
+                  <customization name='CAP_QUERY_USE_DOMAIN_RANGES_OPTIMIZATION' value='yes' />
+                  <customization name='CAP_QUERY_USE_QUERY_FUSION' value='yes' />
+                  <customization name='CAP_QUERY_WHERE_FALSE_METADATA' value='no' />
+                  <customization name='CAP_SELECT_INTO' value='no' />
+                  <customization name='CAP_SELECT_TOP_INTO' value='no' />
+                  <customization name='CAP_STORED_PROCEDURE_PREFER_TEMP_TABLE' value='no' />
+                  <customization name='CAP_STORED_PROCEDURE_REPAIR_TEMP_TABLE_STRINGS' value='no' />
+                  <customization name='CAP_STORED_PROCEDURE_TEMP_TABLE_FROM_BUFFER' value='no' />
+                  <customization name='CAP_STORED_PROCEDURE_TEMP_TABLE_FROM_NEW_PROTOCOL' value='no' />
+                  <customization name='CAP_SUPPRESS_CONNECTION_POOLING' value='yes' />
+                  <customization name='CAP_SUPPRESS_DISCOVERY_QUERIES' value='no' />
+                  <customization name='CAP_SUPPRESS_GET_SERVER_TIME' value='yes' />
+                  <customization name='CAP_SUPPRESS_QUICK_FILTER_ACCELERATION_VIEWS' value='no' />
+                </customizations>
+              </connection-customization>
+            </connection>
+          </named-connection>
+        </named-connections>
+        <relation join='inner' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[tweetsbi].[country]' />
+              <expression op='[tweetsbiaggr].[country]' />
+            </expression>
+          </clause>
+          <relation connection='hadoophive.0terroz1fty87h1c6psjm1k23yn5' name='tweetsbi' table='[sentiment].[tweetsbi]' type='table' />
+          <relation connection='hadoophive.0zam68e0wrcccg151qh1o16nzozy' name='tweetsbiaggr' table='[sentiment].[tweetsbiaggr]' type='table' />
+        </relation>
+        <cols>
+          <map key='[country (tweetsbiaggr)]' value='[tweetsbiaggr].[country]' />
+          <map key='[country]' value='[tweetsbi].[country]' />
+          <map key='[id]' value='[tweetsbi].[id]' />
+          <map key='[sentiment (tweetsbiaggr)]' value='[tweetsbiaggr].[sentiment]' />
+          <map key='[sentiment]' value='[tweetsbi].[sentiment]' />
+          <map key='[text]' value='[tweetsbi].[text]' />
+          <map key='[ts]' value='[tweetsbi].[ts]' />
+          <map key='[tweet_count]' value='[tweetsbiaggr].[tweet_count]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[tweetsbi]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ts</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[ts]</local-name>
+            <parent-name>[tweetsbi]</parent-name>
+            <remote-alias>ts</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>text</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[text]</local-name>
+            <parent-name>[tweetsbi]</parent-name>
+            <remote-alias>text</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[tweetsbi]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sentiment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sentiment]</local-name>
+            <parent-name>[tweetsbi]</parent-name>
+            <remote-alias>sentiment</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country (tweetsbiaggr)]</local-name>
+            <parent-name>[tweetsbiaggr]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sentiment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sentiment (tweetsbiaggr)]</local-name>
+            <parent-name>[tweetsbiaggr]</parent-name>
+            <remote-alias>sentiment</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tweet_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tweet_count]</local-name>
+            <parent-name>[tweetsbiaggr]</parent-name>
+            <remote-alias>tweet_count</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Country (Tweetsbiaggr)' datatype='string' name='[country (tweetsbiaggr)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Sentiment (Tweetsbiaggr)' datatype='string' name='[sentiment (tweetsbiaggr)]' role='dimension' type='nominal' />
+      <column caption='Sentiment' datatype='string' name='[sentiment]' role='dimension' type='nominal' />
+      <column caption='Text' datatype='string' name='[text]' role='dimension' type='nominal' />
+      <column caption='Ts' datatype='datetime' name='[ts]' role='dimension' type='ordinal' />
+      <column caption='Tweet Count' datatype='integer' name='[tweet_count]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='E:/proj/Sentiment_analysis_using_social_media_data/steps+flume file/tweetsbi (sentiment.tweetsbi) (sentiment).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='07/11/2018 05:17:45 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <cols>
+            <map key='[country (tweetsbiaggr)]' value='[Extract].[country]' />
+            <map key='[country]' value='[Extract].[country1]' />
+            <map key='[id]' value='[Extract].[id]' />
+            <map key='[sentiment (tweetsbiaggr)]' value='[Extract].[sentiment]' />
+            <map key='[sentiment]' value='[Extract].[sentiment1]' />
+            <map key='[text]' value='[Extract].[text]' />
+            <map key='[ts]' value='[Extract].[ts]' />
+            <map key='[tweet_count]' value='[Extract].[tweet_count]' />
+          </cols>
+          <refresh>
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='115' timestamp-start='2018-07-11 17:17:45.610' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>tweetsbi</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>53</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ts</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[ts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ts</remote-alias>
+              <ordinal>1</ordinal>
+              <family>tweetsbi</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>53</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>text</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[text]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>text</remote-alias>
+              <ordinal>2</ordinal>
+              <family>tweetsbi</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>40</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>country1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>country1</remote-alias>
+              <ordinal>3</ordinal>
+              <family>tweetsbi</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sentiment1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[sentiment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sentiment1</remote-alias>
+              <ordinal>4</ordinal>
+              <family>tweetsbi</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[country (tweetsbiaggr)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>country</remote-alias>
+              <ordinal>5</ordinal>
+              <family>tweetsbiaggr</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sentiment</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[sentiment (tweetsbiaggr)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sentiment</remote-alias>
+              <ordinal>6</ordinal>
+              <family>tweetsbiaggr</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tweet_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[tweet_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tweet_count</remote-alias>
+              <ordinal>7</ordinal>
+              <family>tweetsbiaggr</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.548092' measure-ordering='alphabetic' measure-percentage='0.451908' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tweetsbi (sentiment.tweetsbi) (sentiment)' name='federated.1d4pn8x09vxpch18p60ah121lkuq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1d4pn8x09vxpch18p60ah121lkuq'>
+            <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[sentiment]' derivation='None' name='[none:sentiment:nk]' pivot='key' type='nominal' />
+            <column caption='Sentiment' datatype='string' name='[sentiment]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1d4pn8x09vxpch18p60ah121lkuq].[cnt:id:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1d4pn8x09vxpch18p60ah121lkuq].[none:country:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1d4pn8x09vxpch18p60ah121lkuq].[cnt:id:qk]</rows>
+        <cols>([federated.1d4pn8x09vxpch18p60ah121lkuq].[none:sentiment:nk] / [federated.1d4pn8x09vxpch18p60ah121lkuq].[none:country:nk])</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1d4pn8x09vxpch18p60ah121lkuq].[none:country:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1d4pn8x09vxpch18p60ah121lkuq].[none:country:nk]</field>
+            <field>[federated.1d4pn8x09vxpch18p60ah121lkuq].[none:id:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAAgAElEQVR4nO29V3BkWXrf+bs3LdL7BBJIeA8Uyld1T/c4zlDD1TCo4a4ojkQyZClFbOxq
+      GXrYUIT0wBeFpFWsQnqQHvggkdIGg5KW1A43pJkdzvTMsKdNdXmYgvdImEyk9+beuw8ooKq6
+      K2+i0ACqUXl/T5WVH06ePHn/x37fdwRFURQ0NJoU8XVXQEPjdaIJQONzc5EnEZoA3iCkSpGf
+      /ej7/PjP71CV69tNT08BcPe994iXqq/wCSWmpxZf/C9F5o//+E+ee1njwYc/5fs/+RBJPp4w
+      ZmemqKnU9yzR/e7v/u7vvp6P1jhtpn72p8xnrXS4RFy+Nj744feYXk/Q6Tfz3ns/5ecfP8Dr
+      NPEv/vm/IIuF9oALj9/FT3/w3/n5nUckdtd4vBylv9PH//Nf/oj9shFbLcF7P7/D/ekl9OUd
+      /uW//n3swQ56OoIA5KML7JSdDHQdvH743p/wKCrS1+HD52zhe//3f2InB35jifWUxP7yFIrV
+      xoc//hF//vOPCQTd/J//9J+xW9JhU7IsLsyxurEFFi/x1WlkqxeLUXdmbaaNAG8QvZdvsTf9
+      Pu8/WCK6eIeNspNy5DFPltaYi+TotpZYSusYGB7if/jaWzx5cJ9cMceTpV26HUWShg4iM3f4
+      2Q++h7X3Bk8++iFry/OkRB+VvWWMwU6Ghq5w69LA0Wc+fLzAlctDR6+fzET4zv/0La5fvsQn
+      P/qvOPpus373h8yvrLC4FWfh8V3imQzTy7uMh4zcXykwPDLEt7/5FZ7cf5/NQgtj3W7+7Mfv
+      8+EnD7Ga9GfaZpoA3iCy2SL/42/9HdrEBCt7GeanHlA1ujHrFELtnfi9ThD0GASFSk06+juP
+      v5WA102ooxNbiwFZrvHwzkdYfSFERSHc1YPbZkVvsqHUCtSkg/mKIleIFSBoNx2V1dvr4cc/
+      +oTltXUUBaRaFUlWEATYj+4Q2Y4BEGjroNXvRlYETAaRcqWKvsXGV995G0/HKLWtT5CcHbTo
+      z/YR1aZAbxC1co6f/vg9XN2X+ebXvoyxHCdTM3B5Ygyr1U7A68Tq8tEXtPLJbISxoV4CbSFM
+      RhOtQT9Wpw+n1cSVt79CJrKM3h5gbKgPm8uL22rCF+zELMXYLejoCvlJby+SkN30hf1HdWjv
+      HSa6+ID5SIpf/Na3mL//PqFL73Dj0jBLj+/h7+pncHAQm7mFoN+D2e5huNPDh4+WmBgZwBto
+      w6SD+NYiPde/TshtPdM2E87qHKBQKGCxWM6i6DeCN6F9lqbu4eq9gs96utOUdGSW//TeLH/z
+      N34VgyicatnwYtufmQBSqRQul+ssiv5cRKNRAoEAiUQCj8fz2urxRW2f43LYji8jn4xRwIL/
+      jHvvk/J825/tCuOMie1usp/IojPb6evwMju3iN3bRmeri9knc0iinqHBfpbn51GMVjr8dt7/
+      +ftcv/0uLXqFTHwXLD7IxcDmJrK0gNHpp6+z7XV/tdeGVM4zt7RGrSYzODpGIrJMIl9jaLiP
+      ZCyH121kP5HjzscfcOXWlzHpqsSjKbp621ld2cDuCeI2VChhfN1f5Vhc6EVwMpmkvWeASjbJ
+      /MI8od4hMnubzM/P09o7hE1fpSLraDEb2VpbRDG76ezsors9SCwWxWTQsbm1w1pkj9TWAvZQ
+      H4XoNqWLe67zuVGqBWoGG33tTrY2NtlOS3S3OlhZ3yQWTVIr59jPVGgPd9LVHmBp7gltPb2Y
+      DUYMepG5udnX/RVeiQstAAQRo16HKIootTIL83PIehMoIAoClUqV9NYCJUuQrvYgsiyjoByd
+      XJrsXqTcLhgsCFKV5cV5JJ0eoYkFAGA0GhF1IigK0e1N1iL7OOxWZEWmUi4jKyCgIMsKTl8r
+      HnsLS7NztHYP4HN9Mac99bjQUyCfP4heFAgEgzhdfSzML2Kw2untCDA/P08ymSPUN0ZyaRGd
+      2UqLUUfI62RjO0Yw2AqCSJvfi+Bsx9MC+fkFFIOVM955+0IjGq34XTIGs4wvYMRqlNhPl7BZ
+      XZRaEkTiVQK+dix+Ixs7MYLBgwOwju4wKytLOD0BzDYnwgWZAp3ZIjgWi2EwGM6i6IaUiwUE
+      vYlkYp9AMMjp7yN8fvL5PFbrxeot3xSeb/szGwEMBsPr2+V4+rkBv/f1fP4xuci7QBedw7b/
+      XIN9MZNgen4ZRZZYnJ1ianaJJp8+a1wwTjwCKIrE4soG+UqF9J6CZGmjtRZhdb9El9uALMvU
+      arXTrOsbhSRJWvu8Jp5v+xMLILq5gru9h8r6AoV8DruvE59QYC2apdfnRxRF9PoLvcY+U3Q6
+      ndY+r4nn2/7EU6BcoUxyZ531jQ0wOYhHo2xEYrQHtXmtxsXhxF1Q3/A4AKH2EF6PF2VjhXJL
+      iE7H69n50WhuqpUKiVhU1cZgMuLxvei+8bnHYJ/XB0B7V9/nLUpD48QUC3km791RtXF5vHi+
+      /KIAmvjIR0NDE4BGk6MJQKOp0QSg0dRoAtBoajQBaDQ1mgA0mhpNABpNjSYAjabm5L5A6TiL
+      i8sUylVqpRzz8/Msr0dOs24aGmfOiV0hSmWJ9jY/jx4+pttnxOLrI2DT/IA0LhYnFoCtRc/j
+      qUkcvk5EfYXdrSVioomr40PIsqzFAzRAiwc4XSRJamijKAq1Wu104gFMNjfXb9zk/oMphq5f
+      obVbz/27d5EEAb1Op8UDNECLBzhddLrGGaQFQUCv17/Q9if+BRaePKYsCXhbQyT2ttjdT2N2
+      +i52mgmNpuPEz+vQ2JUXXgfbP3ddNDTOHW0bVKOp0QSg0dRoAtBoajQBaDQ1mgA0mhpNABpN
+      jSYAjaZGE4BGU6MJQKOp0QSg0dScWACJvQhTU9MkswWkWpn52Rliydxp1k1D48w5sQD0LXbG
+      RgaZnZlhYWYKf7iPpfkZ7X4AjQvFiZ3hjEKNOx99gL21n3xmF4/NjEWvp6Io6LV4gIZo8QCn
+      y7nHA4gmK2+98xXu3r1Pi1EkX5GoKDJGQUDQ4gEaosUDnC7nHg8QWV8mW6wR6uoj6DQyOztF
+      sL37C3khnYZGPU4sgJ6B0RdeT1y+UsdSQ+OLi7YNqtHUaALQaGo0AWg0NZoANJoaTQAaTY0m
+      AI2mRhOARlOjCUCjqdEEoNHUaALQaGpOLIBapcTm5ibFchWpUmR9fZ2tHfWr6jU0vmic2Bdo
+      OxLB6nDy6NEk3T4DVXMHbpvpNOumoXHmvFwAioKsKCjKs/AWURQRhGe+nuHuXiKrC1idbhSh
+      SmZ/k3zawsRIv3Y/wDHQ4gFOl1OOB1D4/p/8IR/dnybY2U0hvsOXvvO3+fJ455HFyuxjFFsr
+      l3pakWWJkE6n3Q/wCmjxAKfL6cYDCCLf/su/yc72/8E3f+03yUz9gKVPxfsm0hlMNZElqYbD
+      UGU3nsFoc2v3A2hcKFSf11/77q/zR//598Hk4tf/av8L7918+ysvvA52nHrdNDTOnLoCeHL/
+      53wytYTJYgNqRPYSuHpaz7FqGhpnT10B9IxcIdg9cvTaYnOcS4U0NM6TurtAVUnBaDRitdkQ
+      BS3SV+PNpI4AZP7Nv/qXZCtlvvOrv47FqKM13IPPaT3n6mlonC0vPwkWRf7Gb30Xo6hjJ7LF
+      1tYWuWL5nKumoXH21HGFEGjrHuK73/46yysrTE/PIuqN51szDY1zQNUX6P2P7vPdv/Hb/NKN
+      Tu4+2TivOmlonBuq5wC/8it/kf/8B7+Hzuzgr/1mv5qphsaFRFUAwZ4x/te/P3ZeddHQOHfU
+      p0Dv/4xyVSK+Ocfj5d3zqpOGxrlRdwR48PMf8Hu/9x/54KNPKCRjfOu3/v4L75cLGZZWNmjv
+      7sfRomdlaQFvqAe3veXMK62hcVrUFcC1d3+Jf+xpQ292oBMF3H7fC+9n8yUGBvv45N5j3FY9
+      7f0jzE1Ncuut21qYmcaFQXUN8MGPf4C9cwybUcewyYHTaj56z2E18eD+I4ZGL7G+PIvLaqFF
+      r6eq3Q9wLLR4gNPlTO4H8FjNpKsyDrOBT3tDPHo0xfjVm5gNetImPTuJNIWapN0PcEy0eIDT
+      5aTxAKqzlfG3vkLYY8NgMHzGH6gt1MrG6jIb23v0jU5QTkYZm7is3Q+gcaFQ7YIkSaJSqbAy
+      dRe8fXQG3UfvhbtfPBfo7hs4mxpqaJwhx1qvtpgNZPPFs66Lhsa5ozoC+FvbqWGkZ2CE/p5O
+      NVMNjQuJqgBWJu/w0XKCairGX/yNv8twu1vNvOlJJeJEd7ZVbTw+P76gFln3RUFVAJNPlvjl
+      X/9tEo/+O3Nre5oAGpBNp1hfWmhopwngi4PqGuAvf/ev8JPv/REziRb+wk1tkavx5lFXAPd+
+      +n32ag7+1m//Pd4ZcjO9unee9dLQOBfqCiC6s0E8XUBRFJJ7EXYT2fOsl4bGuVB3DfAL3/5V
+      /uA//CEf/DcJiyfEX/8FLR5A482jrgDMjgB/73/5nfOsi4bGuaM5bmo0NScWQDIa4YOP7iEB
+      6b1VPrz7kNnF1VOsmobG2XNiAbQ4vLhsB+7R0e09TBYroVDbqVVMQ+M8OLE/rtlsPvL87L10
+      g0q1wv1793n73S9Bk8YDSJLc0EZ52i5aPMDpcibxAGqkk/skkkli8SRKMY0kGEGnRxAExCaN
+      B9DpGg+owtN20eIBTpcziQdoVNjA0CB6QSDY1o7ZaOD69WvaqlrjQnHiLsjh8vJ8vmif338K
+      1dHQOF+0DlujqdEEoNHUaALQaGo0AWg0NZoANJoaTQAaTY0mAI2mRhOARlOjCUCjqdEEoNHU
+      nFgAe1ur/ORnHyEBie017ty7z/3Hs6dYNQ2Ns+fEvkD+UBfBZB6A1Z19bl6/zqP796kpCjoO
+      XE8VRTmtel4Ijvd9laO2abb2OUuO25SfbvsTC0AUXxw8BEFAQEABZFlGURRkubF//JvEcR5o
+      RWne9jlLFOUYsRh8tu1PLIDI+jLrG+sIFjvtHjv3Hjyihh6DIMDTeIDj+Gi/SXy6U3gZgiCg
+      a9L2OUuO1fbwmbY/sQDaOroJtncdBMCIIv5OGeEYldDQ+CJx8imQTvfCCvpN7M2Kjx+T/i9/
+      rGpjuXkDx1/6lXOqkcZpo8XkqSBnslSWllRtjF1a2viLjDZn0WhqNAFoNDWaADSaGk0AGk2N
+      JgCNpkYTgEZTowlAo6nRBKDR1GgC0GhqTuUkOBtdZ3o9gcvlYmSg5zSK1NA4F05lBIju7GJ3
+      ewh3tJ9GcRoa58apjACdw5fJFwo8vH+PL73z9htzP4B0DH99+WnOedDuB3idnPv9AM8T34+i
+      M1kRRfGNuh9Adwz3bvFpznnQ7gd4nZz7/QDPEwi2UikVuXxVux9A42JxKl2QqDfS3tFxGkVp
+      aJwrWoet0dRoAtBoarRVmMa5IJdKJP/gP6jaiDYb7t/4a+dUowM0AWicC0q1Sv4nP1W10Xm9
+      5y4AbQqk0dRc6BFAruWQcguqNoLegd7Wf0410rhonIoAcold5lYjtNg9jA2eny+QXNqmuPpv
+      VW109nH0/b9zTjXSuGicyhRocXWTy1evUcrE0ZL9aVwkTmUEkBDQiwI6BGqA8en/12SFSLqs
+      +rcGnUDIYXr6ByVIrqh/mL4F3CcbZRKFPLO7u6o2PpuNoUDwROW/KluxDJt7aVWbcNBJh//g
+      SnJpfxE5uaZqr/MPI7rCAKwlVohm91Tte339+KwHl5zvFLbIVTOq9m2WMDaD/aD+qST5Sv3f
+      VxQEBvwna8tKuczC/Jyqjdlspn9w6GTlFxMkdh+cjgD8NhPLGxGKsnL08AOUqjI/XVb/gZ1m
+      Hd8ZfyqAUgqm/0j9wxxhuP7bJ6rnYizGP/mzH6jafKWvn3/4zW+dqPxX5aOZTf6vH06p2vzm
+      L17i174+BkBt9v+lcu/fqdqbvv6PMF75qwD8aP4HvLf4Q1X7//nd3+Hd3q8BcD/2IfPpaVX7
+      73T/BjbDwUP3wdoSK/H9+nXR6fkHX/tF1fLqkctm+cN/r/5dg21t/G//+z88UfnZ5BIP/+wf
+      nM4UqHNwDKdJx5XLl0+jOA2Nc+NURgBBEPEHW4FnKcIPcrDLTxOmq/wtz6UJVxQaL0sEeGqv
+      KKAo6vYKwgvl6wRB1V58zl4RQGng4akI4jP7YyapP0zRLQCNHEgFgaPyZQRkQf0ne/77ioKI
+      KDTwklSe2QsICA3ak+dSiwvKQcbl49RdUZTGbanTPbNHaZjxWRSfb3v1ah9W6LDtFQUQ9AjK
+      Kd/ScJh7PR6PYzKZXvq+8JKHUJbll37hN9U+n89jtVo/d/n1qFdOPVvglexfZnsR2/7UzwEO
+      898bjUacTuex/06SpFfKMH3R7RVFOXb7HHYqxy3/8AaU4wrmaMR4BXtBEI4tmC9y25/7QZii
+      KBRyKTJFmbaA9+j/630BRZHJZ5LkqzqCPtex7LOpOCXFRMDjqGuvKAr5TJJ4Oo8vEMRqNr7w
+      /qftJamGIOpRamWyxQpOu53nf/+X2YuiHqlaIl+WcNisHPN5+QyHncpztWdvO0KxchhRJhIK
+      hzHqhCP7Fx9OmVg0gc/vRQD2dyJYgx20PC3yZQ++LNWoVCVMJiPZ5D4mpx9TPXtFoVoushvd
+      x+Jw43HaXvj8z7a9jCyDKEI6lcbudKET69uvTN1hciOF321HFARaw330dATq2suyhIKIoEhk
+      snkcTgdincY/NwGUC1lWVtcoFvOk8gLvvnND1b6YT7Oyuk4hl6aInbdvTqjaF7JJVlY3yKUT
+      yNZWbl8ZVrXfWpklWdbTEfSwOHWfQN9lQh5LXfsnU1OMXL7C/U8+we6wkQ32EQ446lgrzExO
+      MXblMnfv3MFmsxLoGSXoql/+q6GwtjRHtmYg1B7CZbc1EJeIVM7w4PEOFr0EZi8+1Q5T4e7H
+      H2K1WylVBRSdmRtX/HWty9kY955sMjjQTXJnjZ2og/HBrrr2+xvzlO3dFCMzVE12ajsJJkb7
+      6tr3jN/E7Fwnns6hM5jwuu1qlWdtfgZv9yibT+6ht9rYiXsY6Qu91PbcfIEyiRjpQgWbw0Ew
+      GMSoVx+yUrE98iUJm91BazCIocECKr63Q7GmYLfZaGtrfaFHeRnJXIVLo4N4vD7GxwdJRuOq
+      9qIIu+uLtPi66WoPUCqqn28IosL2yhMc7cN0BL2UylVV+1dD5PZXvslX37mFzQizM7NUJLWl
+      nIwkg76aZn0vh0GoUVU9saxgtQcZn5igmC9x4/KI6mI3G4/SNXoZv9dL3/AoUlH9LEEQdBSy
+      CaJ5GOnrRqk1aEtBxOf302IyUCvlSaRyqvaiTiSd2COnWBjq66RaLNYv+7QXwYekUilcLtcL
+      /6coMvlsmtXVdVyBDsJtPtUyDqYzCdY2tvC2ddEecKvbyxKZVJz1jW0C4V5avfV6aMgnd5mc
+      X8dsMlIu17h8/Tothvoiq1WKbEb28AUCKJUiRrsHs77eY6FQKRaIJjK0tbWSzyQx21wY9c/K
+      f1n7HB+F/d0ttvcSCDoDoXAYj8OmMidXKBWLSPLTHTpZwmR1UP/rSsxOTVFVBCRJxmBsYWhk
+      uK69LJV5eO8BorGFarlER/8oIV/9tlcUme3NDcx2N1aznlJVwOWoPzpuzj/kg8k1urvCtJiN
+      +IIdtAc9de1lqUoksksgFEKo5Cljxm55NsV9vu3PbQqUS+2zsR0FQGcwom8wAtTKeR5PPkFn
+      MFCtybhd6sNeMrbDTiwJgN5oRN9gxJAwcev2bXQCVItZilVJVQCJvQixeI5KpUQykWT82i1Q
+      +Q4ra5sMj/SxuLhGu6+F3f00na3qAj4+MlubEQSTBeQakfV1rKOjKoIUWFuao1CR8bV2sL2+
+      ytW33lYpX0fA72U1EkNEwe72qogFFKlG//g1nFYTiiyRTGdVa18tZljf3MHjK7OeTeELD6oK
+      IDx0lb/SP06+UMJktmA0qD87a0tLdAwMs768xMBANyuz6wyPvNwh8twEYLLYCIWefZxOb1Sx
+      hs3VZXpHr+C2GqiVkswub3FppLuuvcXuJGRoOXpttnx2C/Z51jY3mHAfPJCiTmJzeYexkfrX
+      He0m8ty8cQUBKGaibO3EGOhurWtfq1UBhXKpjCKbjpVi5fiItLV3PF0EC3gDrZj1aoKvUlXM
+      XL02wJ99/0e8/fVvYFLtHyTWtmJcv34NQVCYeXCfYtB/tGj+NInNFWrBMZwcLMC3NrfwuOuP
+      bvuRTQav3sZnEVGUKtPTSxCs3zkU0jEm51bx+byk4zGCPaNH7iEvo1aroShQLpUARTX9zLkJ
+      wGA04zKan76q8WRmidGx+gvVcrHIyuLs056nRqlmrmsLkIhGcbaFSWwsENlP0zN8GbPRUNc+
+      6LZx//E0Ib+brbUVusdvqZZvFCWmJicBkGoVvKFeVXt7i4HJyVkkSWZpq0xXv/qi/FUxmkwo
+      oh4UhdlHDxm/dQtLXREIVApppqaeYLbZWF1aZHhsDGNdEQjIUpVqrYYoKJSrsuqBnTsU5s7D
+      u8jdnaRiOxgd6v4/BpOZtYVptkUABcHw2fOQ54nu7DBy5SZOk4DS08HU9JqqADweJ3PTU8iy
+      xOTkLN5guK7tuQkgm4iyunXoiCZTkdVHgOGrt4/+XauUKDfIIZXKZPCFZLYTRW7dmmB6KkJg
+      on4cQDDch8uXJ5HOcfnWlxouyvuHx6k9l/jKYFSvf64kMTFxVq4hAm7v010ZRaEY36NUU7DU
+      /TX1XH/rbVAUCvks29u7DU5ORcZHB5mdmUYBuobHMKqsggXRwOj4ONVCls7+YaqVimrtve09
+      2APPflBdg/xI/tZWph7dIxDwkYrt4e8ZUbVPJTMMj08cbduqcW4CsHsCTHgO9m4rpTyZgvoT
+      LUs1NjfWiMdiZCsiE5cvodZPdLQHefTgIR29w5RSKZyt6r1QZG2BjZ2DnZ+11RV6hsZp9dRf
+      Z8R2NtmNZ0CRWFlc4tpXf4me1vrDfHJvk49zh3NhgaFLV3Bb1adlx0dmaXaGdOHgQbO6fLhV
+      5zQyq4vzpHIl4rF9rr79bsOHI7q7TVVS0Isy27tRvM76HriJrYMpUFurFRSZqeUV1SlQIZNg
+      cS0CQGx7A0vrIO9er/9QW10Bbl53kU5nae8IYzKoP7alfIq7dz7mcEBs7x4k3PryRfO5CUCq
+      lllZXiKTy5LKyrz1tvo5wMbiFKv7FcYHwqSKOtx29T302H6aazdvsLG6TktvO+WFbQjUf6AN
+      Zjs3bvVj0ImUcimyDXYpWzu6qUkr7KeLfPOXv4PDqj4lC4Z7GRgcPHihKA08ol4VAbvDhc58
+      2IkoVGUwqjzUxWIRUdRjMJqwmNVHL5BI5iWuX7+KACxOPaYggaVO+YdTIKkrTHp/F0ODKZDV
+      5ae7Q2J9a5fRG+/SHqi/owNQzie5/3gOu91GYWGe3tEr+J31nwebO8Bg7+DRFE9to/PcBBCL
+      rLKXKtHVHqTFJnzm5PXTdA9fJVyrsLq0SDJbYNtiJqSyDVoul1GUAz8PUCiX1feWXU4r048e
+      IOh0KKKJ8XH1YfXxnZ+RqJrxuWysLy8Q7h3EbasnAoGBwUGqlRLbG+vE0gUGRkZxNliYvwpG
+      kwlZPPz5hIYHYaMT10BRSO7vsjw3x8DomMooIJGJ7x+teTLxBEEZqGOvb3Hx1s3LrK9vEuwa
+      xOeyqdY9tjHHR9ObdIdbSexFkGWZzrb6B227W5uMXruNyyyiyCWmn2zgdw7Wte/uH0SWauxG
+      IkR2YrR29tXdQj83AbR2DxPolIhHd9gv7LG5Y1M9B6hWypTKFYLtnQQ5WDip4XJYmJmeolKu
+      MDk5h9uvnqlOliRqkozJYKR26B2owpW3fwGAYi7N6tpGA89Phcd3P0Q2uTAU0/Rc+RLO03v2
+      AYFipUrA7+HhvYdIBguBoFqvW+MH3/tTbL6nB4SCvsGIZOQr3zj4vigKsb3dujtAALVShk8e
+      zBAIBoiszJHyh+kP169PoGuEv9Q1glSrsLayjCyr10YUdSzPTT/dEJFRdOoC21iYYitVpdVl
+      xuEPq54fnZsA5FqF+bk5LJ42Rod62YwWVO0L2SRbu3Fkqcra8hKdY7e5PFh/Ne/y+BFNzxrG
+      5lBvpGy+zJXrN9CLAtVSlkwmh0/liH1zZY5YqkApESN882u4beoj2MDwKCtrm6QyGZRIBFd3
+      27GS7R4Pifh+koDPiT/Ug7EUJ16WCLTU+zl1vPu1r7K2HkERBDz+tgbboAqJvW02tqPs7O5y
+      6epN6h4xAMnIOj0Tt2mziSiKzNTkDKgIIBs/iCE3mkQqFSPXB+r3/gDBcBduxUg+vs1+Ok+o
+      S71za+vqpyitkEwmKVChM+Stu244N1eI7dV53OEhCjvL3JlaIhxuU7W3u3zYLUZkdHz5F39Z
+      9eEHqFbL5PN5ErFd7n3yMdv76sfx8UQSg05haXEZvUFPIpZQtTeZW9DrdAjC4f6yOsWKzPil
+      Cd795rfochmfc1w7DXQgFdnPVPF5LGwmcjjq72kCAlaHh85wOyaDjo2VZcqqxxISM9OztNhd
+      +HwBQkGf6hTL3d7F6uQdlpaXmXz4AIsnUN+Yg4NQs9GAKAhUKuWGcRS766vUBB37yQzhjiAb
+      Kxuq9vl8gf7hMa7ffodbl3rJ5eu7QpyfM1yxzH5kjUIygTHQQyqVecG789NsLs6wEs3jddnY
+      WFmgGOqkTcXearUR2d5F0Vv4xre+jdmo/tUOD0fK5QoKCrWaen75QKiLQKiLanmQ7cgW+2k9
+      flf9fanl+SekWw8vDBFotZ7U7eHljF26zObmJpmkwtDYOAZV3yeJ9/7bn1I1OQm1BfH6vOhU
+      1wx6vvwL36CYz7JRyTM9/YSRsdG6p8F6s4PbN6+TKxTp6AhTUvG9AbA4PFya8CDLNWK7O2xE
+      9uhR6RBNZiOpdJbh0THK2RhCgy3onfVl9hLpo/q6vPVHo3PzBcqmEggmy9FQqtMbMDTYe4eD
+      CyUyqThF2UCrigCWZx4SLypHD35rRw8BlW3Nva1V9hLZg2AKQaCtsw+/W33adOhRPHoAAA3n
+      SURBVEg5n2AzWqK/5+UehqBw/5NPCHc/2zp0ur2YnjvC/3y+QC8SX52jGuin1VpP9AqVcgX5
+      6KcWMJlMKr26zPLcHCVJAUGgvbMHp7Wlrn0ptcMnT7bQKxIupwmTq4O+DvVpzTMkZqYXGFPZ
+      hFAUmdWFWdKFCqLRwtjIIHoVwc89vo8tGD7aBbLYHNgsz9aQr8UXKLa1jujt4PA3MltsGPQt
+      de0L2RQra+sU81nKooO3ro+rlt83ehlrZJN0vozN5Wn4MMejuyTz0tEBmNRoGN5cJZo82Nev
+      VQrY/eqZKbp6+vD6fKBIVCW5of/KqyGztjhPpniwd5uP79MfVEv+pbA4O0W2dDDq5bJ53v76
+      N6irFwRaO8LICqDIzE9PcunWbUx1nrnUXoyRazfR7c2yXnEw2uDhz6f2Wd7YPvou5Zr6Y1jI
+      pJBEI7an665EMkPAWz+YKNjRhd19MMpVKlWMKiPGuQlAUSSy2QzS4XOgM2G31hdAJhmjUJax
+      Wiw47P6Gzm0by3NUjC7CYR+xrRVWqiJ9HfX3l7v6h2FzC0kRsLu8BBr4mLd2dOMPyYiiDrlW
+      Il9WF8x+dBeXz8fjux+jiAZ6Ry7jsZ3eVpDNHaCz1042X8XY1Y6s5q2GyNiVGxSzSRZX1vG1
+      dmBW1aOA1fa0PRQFo05AbaPG5guwOD8JtQqKrsLalp7ujvrTDqvLx7jdDaKIiEKqgfOcwWTG
+      7XZTzqdZWF4Dk11VALnUPqLFSWxlmmxFxunvprfD+1LbcxOAJ9hBhzeIUTyM4VTvEYMdfQQ6
+      ngbGrKyxtWeiQ8UFNl+q0t0VpMWgoz0cYnYtC9S3tzpcDA3ZiO1GWFtfRNC30KVysrs0+5hM
+      BWRFRCpmGbt2u64tQFWSKCe30DnC9HggmS2cogBkdnf2cNr07Oym8OkL1PROrHVFIDP94B5V
+      vY3+vgH0OlHVvx8knjx+TLF2MAVq6x5Q3Qa1egK4EwmSORlFgWBA3c09G9tgcjmKXKvhdRqw
+      +XtRmwwKAuztRBBNdr781a837AwrlSrIVeJ5mVs3RpiaicDrFoAslUjnytTiq2wl8vhau+hV
+      GSo3lufxdA5it7sZG9Ezt5oAFQH09/Xw+OF9dEYD1Spcvqruh7M085C1nST+tna6egdwNIjW
+      KtZErl2Z4O4HP2Pk+pewmdWaTqAnHGJ5K8bo6DC5+B4BldiEk5BLxZh+kiOeKpIUJPpbB1Tt
+      rXYXVUVhO7IFCnQPDKkchIlYnB5Gu7sB2FxbpepzY6ijmuzuCiVzkKsDXmrlHI+fzHH9yljd
+      uqTiKcau3aC8+pCYpbOhm3h8N0KhqmBScjyZmcbbIB6gq7eXuflFhsbGqeRztHXWv7303ASQ
+      z2axu8OsxrLcunWF6akVUBGATpDJ5ArYTXby2RRyg/QeeqMZk1GPpIDJYsGgvs1BqKsPh//Z
+      aXG9mNFDnFYjk5OTCEYLawuzDU6Cweb2M+E++H6egPqW76uj5/Y771CpKQhyhWJNwFnfEw6Q
+      KFagN+xhNwMtxSi5GqonwanUs23kUiZNRYZ6yxhBEJ5tZSqNs0s4vF5WZydRqjUoRdjQq58E
+      u/ytKMZnUWCWBm4oepOV8SNHRBNqK5JzE0Coq5fp6QeE+4aoFYu4g+p7xe19IyzPz/Bwo4be
+      bGN0SD3D8/L8E9r7x3BbjeQTmyysxRjuqf8ZFpsTy/E2fQAwWJxM9AWJxZK4HWaSuTKoCKCY
+      iTM9t4LBqEdnsjE23N9QZMdH4cHdjxFEkVzNiKFa5NLb72CrOwVSKJeKFAom8gWgVEL9q+vx
+      OU3cvf8AEQmT3VfXDwjAFuzFujzHw4dbKIiMjtfv/eEgl9PQ+AS5RAyfz8vublTVXpZqlJ47
+      ezGY1d2n5WqJx5PTCKKOGjouXRrHVMdV/PwiwtIpSlWJjaVZNhDoG1Hf1REEkf7hS8cuv1Sq
+      UkjHKWUAFIqZJKAuslchvr9PW5uPvd0ojpYAyXQJf92FmMLi8hpXbtzAIArsrS+wm8gT8r6C
+      4lSRMFk8DA20sbiWIWAskKvIKgLQ4/fZiWcrGAWoWdw464dKABI2dxtXQ0aqgg65lD9wtqtT
+      fDETJ1WsHUX57UX36WpXOQlO7IOrjb3dXXw+D/H9OG1t9YOLyoUcFUXPYE8HkbUF0rkiPnf9
+      KeX68gJdwxN4rEYq+RgLyxHGh15+kHpuAnAF2nkrcDAXU+QSU9Nr+CdOL0ikb2iYXOGwlzAw
+      NHS60w5BKjE5OUN8P0W1ksXVqh4QU8hlWXqa3LWUSWBv90KDfvf4iBjFGk/m16nWZDbzMNCh
+      vgvkcljZXYmgE8ETDKuGOEKNrc0dOgMtJHEgJjex97qot5uoSFXSqTRGk5munh6cdvXvaTQZ
+      WJyZJJfcZ2pqGklQn9K4Ax3Ie1v89Cfv0TV4id529Y6tWCiQXVtm72kwVaFYf/g6v4OwxB4r
+      mwcBMbVyAWdbP/3h4x6WNGZva4XVrYOhVJZqtPUM0xNS3414FSrlEtXnTosPXCPqTzmqlSoK
+      Byn7BEFBpzO8cJH2aR6ENUbh/r37XL12HUGAmYcP6L9yHXNdEZT5yf/351gsevJCC/pSjstf
+      /abqqKE8zQ009fAutZZWbl+pn7VZqlUplZ8FzegNRkwq0XuZ+B5rkT3S6TROp7PhIrhWrSI/
+      TQ52kCNJxPCcL9BrOQizuvyMOQ62omSpSqlyujcJBDt6CYS62FpfJZEp4m7gDPeqpBMx9lNp
+      1la36e7pJNTZg1MlwGV5eZnhkX4WFjbp8FnYrRjprBOUcfZUqZaq7O7uACCXCuSqYK5bfRNf
+      /9bxszpXCmkWljdAFGntHSPUYBu0XMiyEdljbXWV7p4enN4gIZWYAIc3yISKO8On2VhZon1g
+      mPWlRQYHe5ibXXv9QfEgE1lfIZFKkcxWuXr96qmWntjbYmM3QXtnDxPd9hNnYauHvy2Mv60V
+      qaZjZKTx1O3A1+jABUFRzEcpSV4PBkZGB6k+rUNocBR3o5iYV6BSKlKuSRh0CvG9bapVSfUg
+      zOLwMOLwINVqDA+PHOu3Su3vsrW7j8vXRnurV/Uco1argXJwx0CjoPhzmwJtL88wv5NjbKiT
+      /XiZ0eHuU/28/Z0NItHUUWM28gV6VQ5cIdKk0zmcTkeDbVCFrdUlEtkisnwwDHcPDL0QEHO+
+      U6AvFoeuEIdTGpe/TXUbNBVdZzVWZXywi72NBYrGAAMq0+fEXoTNvTjK06S5/rZO2vzP2vq1
+      TIFCfWO0dlfZ2lgnn002DIh5VaRalUIhf/S62sC781XRt9iZCB//ZpoqeiYm1NM5NiuyDENj
+      xwtaB0jG0wwMXsJgEOjoG2R6aglUBFAoVhgdn2iw0D/gXJPjijoDnT39dPYcP5f+cQmG+wiG
+      6+eX/LysLs6STD7bqmtt78SuEuIYWV0gGj3c3xYYHL98ikHxF5vEzjqJvSS2p0+f3e2j1Vf/
+      NNjpdrP0ZIoDB1AFh6f+lilAKhZhfTd65Hkc6h4gXGfR/NquST1uau0vCgajGY/nWSM28u50
+      B9oZGR09en3Rvu9ZIgg6XG4PjqcbP0az+jaogo6R8QnS8SiBgJed7frXMgGYrC6uD44enVuo
+      tf2Fvif4PHG4PHi9brLZAhazgXypopqew2ISmZ4+vG/rYA3gaDnFlecFxmS1Y/V5UYpZbDYb
+      qVQa1DyDE3HMvhDRvT0CAQ/xeIK2UP1FttNpY/7J9NFCORDqotX38kNLTQDHpFAoABLra5sM
+      9ATYjZVwqKRqCYV7XliHNIpQayYqxQImGbbW1hgbHyWyFcGtkkfIYNQxNz1JJhlncnIawaC+
+      ueH2t2FxPltfGlUSKmi/yjEp51JMTk4T2YpSKaWw+LpV7bc3ltlLHDhwVSsVhq/cxO+o38s1
+      FxJzM5Mkd7aQFYl8WX16aGyxM9YTbhDD8Iz0/i5LG0/PPKQagfAA/Z0vHzHONT16s3GQDGyZ
+      kiTSP9BPi/Hlp5Ea6iw+ukOsajgSgD/URbj15f79hyiKTGRthXi2SGdP3wuJ1V7LNuhFZ3N5
+      lkjs4M7jXCpOz+Uv0ddWb+dCIbK2RDxXpae3F7tFfZHXbGTiOzxZXAdAqhTBGuSd66N17XXG
+      FkYGh448UhvlEk1Gt1nbjtHR1cNEt0P1oE0TwDEJ9w7jDaRYXlnHG7xMr0r0GDy9tlOusbq0
+      gLYIfhGHt40bdjery0sUJRdDw+rBPK2d3SiCfHg7LmLDSYuCKArsbK6xs6ktgk+Fucd32EpW
+      6OvtRi8qFMo1rOb6DlzVavnpwhlEvblhQtdmIrG9wkePF+nt68dtM5LLFTCpXIBSLeWPHCkB
+      fG2dqlMgqVajWDhMvCZgrO/0pAnguHQNjBE4uudLaHBnmUDP4DiH58bpvXV2Ymm6606ZmguH
+      L8Tbt5+NoGqeoHCQGqfyXMr1qopvD4Av1IUvdHBJnyLlmZrZxDPx8lFGE8AxabHaaVEPRHqO
+      A1+g/fSBa0YhX2D8Wr0cQs2H3mjG4zn+usjpD3HT10YytsN6ZA/zSy5gf55kNML6dgw4GD2C
+      vfWDr7RdoDNBQZbko0RUOp3uM6eRzd0+r0Yhk2BpdROHN0hXe2tD71FZlp+7/FuHKNZve20E
+      OBMERJ3u/BKvvuGUCnkkBTKJKFOJaMOAGFEUj33rvfYbaXzh0RuNR/c+myx2AiopMl+57FMr
+      SUPjjLDY3fT1HUT4lfNJ5hbWuTRyfNd0NTQBaHzh0RuM6A0HZyiilEeW1S/hexX+fyh8C1P9
+      +BNAAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
